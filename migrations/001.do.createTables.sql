@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS "user"(
 CREATE TABLE IF NOT EXISTS "contact"(
   id SERIAL PRIMARY KEY,
   user_id INTEGER REFERENCES "user"(id) NOT NULL,
-  phone_number INT NOT NULL,
+  phone_number TEXT NOT NULL,
   email_address TEXT NOT NULL
 );
 
